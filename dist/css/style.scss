@@ -10,6 +10,7 @@ $simple-pad2: 145px;
 $benefits-height: 220px;
 $benefits-margin: 34px;
 $trynow-pad: 25px;
+
 //color values
 $links-text-grey1: rgb(68,76,84);
 $links-text-grey2: rgb(117,117,117);
@@ -20,6 +21,7 @@ $benefits-border-grey: rgb(219,219,219);
 $smbus-bg-blue: rgb(44,73,133);
 $options-text-grey: rgb(67,83,89);
 $trynow-text-grey: rgb(103,103,103);
+
 //mixins
 @mixin links-text-style{
 	display: inline-block;
@@ -34,8 +36,14 @@ $trynow-text-grey: rgb(103,103,103);
 @mixin benefits-text2-style{
 	font-family: sans-serif;
 	font-size: 90px;
+	font-weight: 200;
 }
-
+@mixin benefits-text3-style{
+	font-family: sans-serif;
+	font-size: 19px;
+	color: rgba(255,255,255,0.3);
+	font-weight: 500;
+}
 
 //selectors
 .links-parent{
@@ -91,7 +99,7 @@ $trynow-text-grey: rgb(103,103,103);
 			}
 			.permonth{
 				height: 25%;
-				@include benefits-text1-style;
+				@include benefits-text3-style;
 				vertical-align: top;
 			}
 			&.personal{
